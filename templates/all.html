@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css_additional %}
+<link rel="stylesheet" href="{% static 'info/css/all.css' %}">
+{% endblock %}
+{% block title %}
+    Пиццы:
+{% endblock %}
+{% block content %}
+<h3>Кальцоне</h3>
+<img src="{% static 'info/images/ka.jpg'%}">
+<h3>Неаполитанская</h3>
+<img src="{% static 'info/images/neo.jpg'%}">
+{% endblock %}

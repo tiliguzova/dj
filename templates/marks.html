@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<br>
+<h1>Amount marks: {{marks.count}}</h1>
+</br>
+<h1>All posts: </h1>
+    <!--<ol>-->
+    <!--<li> post: {{marks.0.name}}</li>-->
+    <!--<li> post: {{marks.1.name}}</li>-->
+    <!--</ol>-->
+
+    <!--<a href="{% url 'contest' %}">Contest</a>-->
+    <!--<hr>-->
+    <!--<table>-->
+    <!--    <tr>-->
+    <!--    <th>Name</th>-->
+    <!--    <th>Text</th>-->
+    <!--    <th>Price</th>-->
+    <!--    </tr>-->
+    <!--    <tr>-->
+    <!--        <td>{{marks.0.name}}</td>-->
+    <!--        <td>{{marks.0.text}}</td>-->
+    <!--        <td>{{marks.0.price}}</td>-->
+    <!--    </tr>-->
+    <!--</table>-->
+    <!--<hr>-->
+    <!--<table>-->
+    <!--    <tr>-->
+    <!--    <th>Name</th>-->
+    <!--    <th>Text</th>-->
+    <!--    <th>Price</th>-->
+    <!--    </tr>-->
+    <!--    {% for i in marks %}-->
+    <!--    <tr>-->
+    <!--        <td>{{ i.name }}</td>-->
+    <!--        <td>{{ i.text }}</td>-->
+    <!--        <td>{{ i.price }}</td>-->
+    <!--    </tr>-->
+    <!--    {% endfor %}-->
+    <!--</table>-->
+    <!--<hr>-->
+    <ol>
+        {% for mark in marks %}
+        <li><a href="{% url 'mark' mark.id %}">{{mark.name}}</a></li>
+        {% endfor %}
+    </ol>
+
+</body>
+</html>

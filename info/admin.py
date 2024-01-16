@@ -7,7 +7,7 @@ from info.models import Info
 
 @admin.register(Info)
 class InfoAdmin(admin.ModelAdmin):
-    list_display = ("name", "rating", "price", "is_buy")
+    list_display = ("id", "name", "rating", "price", "is_buy")
     search_fields = ("name", )
     list_filter = ("is_buy", )
     sortable_by = ("price", 'rating')

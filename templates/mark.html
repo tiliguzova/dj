@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if mark %}
+<table>
+        <tr>
+        <th>Name</th>
+        <th>Text</th>
+        <th>Price</th>
+        </tr>
+        <tr>
+            <td>{{ mark.name }}</td>
+            <td>{{ mark.text }}</td>
+            <td>{{ mark.price }}</td>
+        </tr>
+    </table>
+{% else %}
+<h1>Not Found</h1>
+{% endif %}
+</body>
+</html>

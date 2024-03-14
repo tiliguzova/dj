@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+<body>
+{% block block_marks %}
+<h3>Delete</h3>
+
+<form method='post'>
+    {% csrf_token %}
+</form>
+{% endblock %}
+</body>

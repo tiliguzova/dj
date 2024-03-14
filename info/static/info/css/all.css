@@ -1,0 +1,25 @@
+img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: moveInCircle 5s linear infinite;
+}
+
+@keyframes moveInCircle {
+    0% {
+        transform: translateX(50px) rotate(0deg);
+    }
+    25% {
+        transform: translateX(50px) rotate(90deg);
+    }
+    50% {
+        transform: translateX(50px) rotate(180deg);
+    }
+    75% {
+        transform: translateX(50px) rotate(270deg);
+    }
+    100% {
+        transform: translateX(50px) rotate(360deg);
+    }
+}

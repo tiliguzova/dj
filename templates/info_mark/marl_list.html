@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+<body>
+{% block block_marks %}
+<form method="get" action="{% url 'mark-create' %}"><button>
+    Create new
+</button></form>
+<h3>All marks</h3>
+    <ol>
+        {% for mark in marks %}
+        <li><a href="{% url 'mark-detail' mark.id %}">{{mark.name}}</a></li>
+        {% endfor %}
+    </ol>
+
+{% endblock %}
+</body>
